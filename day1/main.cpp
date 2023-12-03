@@ -52,7 +52,7 @@ int find_number(const std::string& str, int pos) {
 void task(const std::string& filename, int task_max, std::atomic<int>& out, int task_id) {
 	std::ifstream input {filename};
 
-	// Move task to its locstion in a file
+	// Move task to its location in a file
 	for (int i = 0; i < task_id; ++i) {
 		std::string tmp;
 		std::getline(input, tmp);
